@@ -1,0 +1,49 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "A tic-tac-toe game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build",
+    "start:dev": "nodemon ./server --exec babel-node --watch ./server",
+    "build": "babel ./server -d ./build && webpack --mode=production",
+    "webpack:dev": "webpack-dev-server --mode=development",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAMOTZ/Tic-Tac-Toe-Game.git"
+  },
+  "author": "Tunmise Ogunniyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAMOTZ/Tic-Tac-Toe-Game/issues"
+  },
+  "homepage": "https://github.com/IAMOTZ/Tic-Tac-Toe-Game#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "node-sass": "^4.9.3",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.4",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
